@@ -1,0 +1,55 @@
+h3
+{
+      
+}
+
+.container {
+      display: grid;
+      grid-template-columns: repeat(8, 60px);
+      grid-template-rows: repeat(8, 60px);
+      width: 480px;
+      height: 480px;
+      border: 4px solid black;
+      position: relative;
+      top: 40px;
+      left: 500px;
+
+    }
+
+    .container div {
+      width: 60px;
+      height: 60px;
+      font-size: xx-large;
+      align-items: center;
+    }
+
+    /* Color the cells using nth-child pseudo-class */
+    .container div:nth-child(odd) {
+      background:white;
+    }
+
+    .container div:nth-child(even) {
+      background:gray;
+    }
+
+    /* Fix alternating pattern row by row */
+    .container div:nth-child(16n+1),
+    .container div:nth-child(16n+3),
+    .container div:nth-child(16n+5),
+    .container div:nth-child(16n+7),
+    .container div:nth-child(16n+10),
+    .container div:nth-child(16n+12),
+    .container div:nth-child(16n+14),
+    .container div:nth-child(16n+16) {
+      background:gray;
+    }
+    .container div:nth-child(16n+2),
+    .container div:nth-child(16n+4),
+    .container div:nth-child(16n+6),
+    .container div:nth-child(16n+8),
+    .container div:nth-child(16n+9),
+    .container div:nth-child(16n+11),
+    .container div:nth-child(16n+13),
+    .container div:nth-child(16n+15) {
+      background:white;
+    }
