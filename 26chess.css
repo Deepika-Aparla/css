@@ -18,7 +18,7 @@
       align-items: center;
     }
 
-    /* Color the cells using nth-child pseudo-class */
+ 
     .container div:nth-child(odd) {
       background:white;
     }
@@ -27,7 +27,7 @@
       background:gray;
     }
 
-    /* Fix alternating pattern row by row */
+    
     .container div:nth-child(16n+1),
     .container div:nth-child(16n+3),
     .container div:nth-child(16n+5),
